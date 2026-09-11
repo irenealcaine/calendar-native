@@ -5,20 +5,57 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "scheme": "calendarnative",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0E0E12",
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ],
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0E0E12",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "package": "com.ireneequisde.calendarnative"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "output": "static",
+      "favicon": "./assets/favicon.png",
+      "name": "calendar-native",
+      "shortName": "Calendario",
+      "themeColor": "#0E0E12",
+      "backgroundColor": "#0E0E12",
+      "description": "Calendario personalizable con eventos y tareas."
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0E0E12",
+          "dark": {
+            "backgroundColor": "#0E0E12"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "aa0f6736-ce06-4333-b948-b01da65a02b8"
+      }
+    },
+    "owner": "ireneequisde"
   }
 }

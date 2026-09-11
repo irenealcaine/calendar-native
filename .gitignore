@@ -31,7 +31,14 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
+
+# skills
+skills-lock.json
+
+# agents
+.agents/
 
 # typescript
 *.tsbuildinfo
