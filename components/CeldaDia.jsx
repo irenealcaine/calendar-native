@@ -44,7 +44,7 @@ export default function CeldaDia({ cell, dayEventos, dayTareas, isToday, onPress
 const styles = {
   cell: {
     width: "14.28%",
-    aspectRatio: 1,
+    aspectRatio: Platform.OS === "web" ? 1 : 0.8,
     alignItems: "center",
     justifyContent: "flex-start",
     paddingTop: spacing.sm,
